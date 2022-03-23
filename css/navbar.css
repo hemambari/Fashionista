@@ -1,0 +1,267 @@
+
+@media only screen and (max-width: 767px) {
+	.-ios-fix .main-hero,
+	.-ios-fix .c-hero-banner__image img {
+		height: 500px;
+	}
+}
+
+.navbar {
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (min-width: 992px) {
+	.navbar {
+		background: none;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.navbar .navbar-nav {
+		height: 72px;
+	}
+}
+
+.navbar.onscroll {
+	background-color: rgba(255, 255, 255, 0.8);
+	
+}
+
+.navbar.onscroll .navbar-collapse {
+	border: none;
+	width: 100%;
+}
+
+.navbar.onscroll .navbar-nav .nav-link {
+	padding: 19px 30px;
+}
+
+@media only screen and (min-width: 992px) {
+	.navbar.onscroll .navbar-brand {
+		padding-top: 8px;
+	}
+}
+
+.navbar.onscroll .navbar-brand__img {
+	transition: all 0.5s ease;
+}
+
+@media only screen and (min-width: 992px) {
+	.navbar.onscroll .navbar-brand__img {
+		max-height: 66px;
+	}
+}
+
+.navbar .navbar-toggler {
+	position: absolute;
+	right: 14px;
+	top: 14px;
+	border: none;
+}
+
+.nav-link {
+	text-transform: uppercase;
+	position: relative;
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: #252525;
+}
+
+.nav-link:not(.dropdown-toggle):after {
+	content: '';
+	display: block;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background: #252525;
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+
+.nav-link.active, .nav-link:hover {
+	color: #cc2929;
+}
+
+.nav-link.active:before, .nav-link:hover:before {
+	content: '';
+	width: 70%;
+	height: 3px;
+	background: #cc2929;
+	display: block;
+	position: absolute;
+	bottom: -2px;
+	left: 50%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.nav-item:last-child .nav-link:after {
+	display: none;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 24px 30px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding: 24px 22px;
+	}
+}
+
+.nav-link_social:after {
+	background: none !important;
+}
+
+.nav-link_social:hover:before {
+	background: none;
+}
+
+.nav-link--phone {
+	font-size: 1.5rem;
+}
+
+.nav-link--phone:hover:before {
+	display: none;
+}
+
+.nav-item {
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
+	align-self: center;
+}
+
+.navbar-brand {
+	padding-top: 0;
+	padding-left: 15px;
+}
+
+@media only screen and (min-width: 992px) {
+	.navbar-brand {
+		padding-left: 3.125rem;
+	}
+	.navbar-brand:before {
+		content: '';
+		display: block;
+		width: 2.5rem;
+		height: 0.0625rem;
+		background: rgba(255, 255, 255, 0.5);
+		position: absolute;
+		top: 50%;
+		left: 0;
+	}
+	.onscroll .navbar-brand:before {
+		display: none;
+	}
+}
+
+.navbar-brand__img {
+	max-height: 3.75rem;
+	position: relative;
+	transition: all 0.5s ease;
+	top: 0;
+}
+
+@media only screen and (min-width: 992px) {
+	.navbar-brand__img {
+		max-height: 6.75rem;
+	}
+}
+
+.navbar-collapse {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar-collapse.show {
+	overflow: scroll;
+	max-height: 500px;
+}
+
+.navbar--center-mode .navbar-brand {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	text-align: center;
+	margin: auto;
+}
+
+.navbar--center-mode .navbar-toggle {
+	z-index: 3;
+}
+
+.navbar-toggle {
+	background: none;
+	border: none;
+	padding: 17px;
+	margin: 0;
+	position: absolute;
+	top: 2px;
+	right: 14px;
+}
+
+.navbar-toggle:focus, .navbar-toggle:hover {
+	background: none;
+	outline: none;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #fff;
+	width: 30px;
+	height: 4px;
+	transition: all 0.2s;
+	display: block;
+	border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+	margin-top: 4px;
+}
+
+.navbar-toggle .top-bar {
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-ms-transform-origin: 10% 10%;
+	transform-origin: 10% 10%;
+}
+
+.navbar-toggle .middle-bar {
+	opacity: 0;
+}
+
+.navbar-toggle .bottom-bar {
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-ms-transform-origin: 10% 90%;
+	transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed .top-bar {
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+
+.navbar-toggle.collapsed .middle-bar {
+	opacity: 1;
+}
+
+.navbar-toggle.collapsed .bottom-bar {
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+
+.dropdown-menu {
+	background: rgba(0, 0, 0, 0.75);
+	top: 110%;
+}
+
+.dropdown-menu .dropdown-item {
+	color: #fff;
+	padding: 10px 30px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+	color: #eab96a;
+	background: none;
+}
